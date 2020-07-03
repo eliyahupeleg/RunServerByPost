@@ -100,40 +100,5 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-
-
-
-        /*public void run(){
-            CloseableHttpClient client = HttpClients.createDefault();
-            HttpPost httpPost;
-            ArrayList<NameValuePair> postParameters;
-            httpPost = new HttpPost("https://www.pythonanywhere.com/api/v0/user/elikopeleg//consoles/16352775/send_input/");
-
-            httpPost.addHeader("Authorization", "Token 242fa8569f24430b576c163b70545297a0652117");
-            postParameters = new ArrayList<NameValuePair>();
-            postParameters.add(new BasicNameValuePair("input", "python3 chordServer.py \n"));
-
-            try {
-                httpPost.setEntity(new UrlEncodedFormEntity(postParameters, "UTF-8"));
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-            }
-            HttpResponse response = null;
-            try {
-                response = client.execute(httpPost);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            HttpEntity entity = response.getEntity();
-
-            //try {
-//                HttpResponse response = httpclient.execute(httpPost);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-
     }
-*/
-    }
-
 }
